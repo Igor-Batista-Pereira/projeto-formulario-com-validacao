@@ -1,0 +1,146 @@
+html{
+    background-color: #e5e5e5;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.ajuda{
+    background-image: url(../imagem/bg-repeat.jpg);
+    background-repeat: repeat;
+    width: 800px;
+    height:402px;
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+
+.ajuda .duvida{
+    margin-left: 50px;
+    width: 300px;
+    height:111px;
+}
+
+.ajuda .duvida .pergunta{
+    font-size: 20px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 23px;
+    ;
+}
+.ajuda .duvida .orientacao{
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    margin-top: 11px;
+    opacity: 0.8;
+}
+
+.container-form{
+    width: 340px;
+    height: 378px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    justify-content: around;
+}
+
+.formulario .info{
+    margin-bottom: 10px;
+    margin:9px 20px 0  ;
+}
+
+.formulario input{
+    height: 35px;
+    width: 298px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: none;
+    font: "Roboto";
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario textarea{
+    height: 100px;
+    width: 298px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: none;
+    font: "Roboto";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    
+}
+
+.formulario .msg-obrigatorio{
+    width: 66px;
+    height: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    color: #F52E2E;
+    background-color: #FFFFFF;
+    display: none;
+}
+.formulario .msg-fixa{
+    margin-left: 15px;
+}
+
+.btn-enviar{
+    margin: auto;
+}
+
+.btn-enviar input{
+    display: flex;
+    justify-content: center;
+    margin: 11px 20px;
+    background-color:#3CCC87;
+    width: 298px;
+    height: 41px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-enviar input:hover{
+    background-color: #0bc44b;
+}
+
+.item.invalido{
+    border-color: #F52E2E;
+}
+
+.item.valido{
+    border-color:#00C22B ;
+}
+
+.msg-obrigatorio.mostrar{
+    display: block;
+}
+

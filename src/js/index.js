@@ -1,5 +1,5 @@
 const formulario = document.querySelectorAll('.item')
-const submit = document.getElementById('mensagem')
+const submit = document.getElementById('submit')
 const errorMessage = document.querySelectorAll('.msg-obrigatorio')
 
 formulario.forEach(function(input, index){
@@ -19,7 +19,7 @@ formulario.forEach(function(input, index){
 submit.addEventListener('click', function(click){
     click.preventDefault()
 
-    formulario.forEach(function(input, index){
+    formulario.forEach(function(input,index){
         if(input.value !== ""){
             input.classList.remove('invalido')
             input.classList.add('valid')

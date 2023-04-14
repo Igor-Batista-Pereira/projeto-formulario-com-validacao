@@ -16,13 +16,14 @@ formulario.forEach(function(input, index){
     })
 })
 
+//evento de click 
 submit.addEventListener('click', function(click){
     click.preventDefault()
 
     formulario.forEach(function(input,index){
         if(input.value !== ""){
             input.classList.remove('invalido')
-            input.classList.add('valid')
+            input.classList.add('valido')
             errorMessage[index].classList.remove('mostrar')
         }else{
             input.classList.remove('valido')
